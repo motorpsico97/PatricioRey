@@ -270,7 +270,7 @@ label {
     .section-discs {
         display: flex;
         flex-direction: column;
-        text-align: ;
+        text-align:justify ;
     }
 
     .section__discs h2 {
