@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 * {
     box-sizing: border-box !important;
     font-family: "Montserrat", sans-serif !important;
@@ -124,13 +126,10 @@ label {
 .grid__container-buttom:hover {
     background-color: #000000;
     box-shadow: 3px 4px 0 0 #484848;
-
-
 }
 
 .grid__container-separator {
     background-image: url(/img/separator.png);
-    opacity: 50%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200px;
@@ -155,6 +154,48 @@ label {
     background-color: #000000;
 }
 
+/* ------FOOTER------ */
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    container-type: inline-size;
+    container-name: footer;
+}
+
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.footer__social i {
+    font-size: 25px;
+    color: #ff0000;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.footer__list a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.footer__list a:hover{
+    color: #ff0000;
+}
+.footer__list li{
+    list-style: none;
+    margin: 10px 0;
+}
+.footer__social i:hover{
+    color: #ffffff;
+}
 
 
 
@@ -280,7 +321,7 @@ label {
     .section-discs {
         display: flex;
         flex-direction: column;
-        text-align:justify ;
+        text-align: justify;
     }
 
     .section__discs h2 {
@@ -329,17 +370,19 @@ label {
     }
 
 
-
     /* carusel */
     .carousel-title {
         font-size: 3rem !important;
         font-weight: 600;
         margin: 20px;
     }
-    
+
     #carouselExampleIndicators img {
         border-radius: 1rem;
         max-width: 100%;
     }
+
+
+    /* FOOTER */
 
 }
