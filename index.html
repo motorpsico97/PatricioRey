@@ -27,34 +27,34 @@
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a href="#">
+                    <a href="./index.html">
                         <i class="bi bi-house"></i>
                         Inicio
                     </a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#">                        
+                    <a href="./pages/noticias.html">
                         <i class="bi bi-newspaper"></i>
                         Noticias
 
                     </a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#">
+                    <a href="./pages/discografia.html">
                         <i class="bi bi-disc"></i>
                         Discografia
 
                     </a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#">
+                    <a href="./pages/galeria.html">
                         <i class="bi bi-images"></i>
                         Galería
 
                     </a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#">
+                    <a href="./pages/contacto.html">
                         <i class="bi bi-envelope"></i>
                         Contacto
                     </a>
@@ -65,7 +65,7 @@
 
 
     <!-- MAIN -->
-    <main class="main__container">
+    <main class="hero__container">
         <h1>Los rendondos</h1>
         <p>La banda que cambió la historia del rock argentino</p>
         <img src="./img/portada2.jpg" alt="">
@@ -88,7 +88,7 @@
                         el boulevard 51 y la calle 50, entre las calles 4 y 5-, Skay comandaba como podía los ensayos y
                         grabaciones.</p>
                     <img src="./img/noticias/origen.jpg" alt="">
-                    <div>
+                    <div><br>
                         <a href="" class="grid__container-buttom">Continuar leyendo</a>
                     </div>
 
@@ -104,7 +104,9 @@
                         esos
                         recitales la transmutación de Patricio Rey como una referencia comercial. .</p>
                     <img src="./img/noticias/chancho.jpg" alt="">
-                    <a href="" class="grid__container-buttom">Continuar leyendo</a>
+                    <div> <br>
+                        <a href="" class="grid__container-buttom">Continuar leyendo</a>
+                    </div>
                 </div>
             </div>
             <div class="grid__container-item">
@@ -121,7 +123,9 @@
                         nota publicada por Franco Ruiz en su blog DataRocha, contando la historia de este particular
                         personaje de la historia del rock platense.</p>
                     <img src="./img/noticias/sultan.jpeg" alt="">
-                    <a href="" class="grid__container-buttom">Continuar leyendo</a>
+                    <div> <br>
+                        <a href="" class="grid__container-buttom">Continuar leyendo</a>
+                    </div>
                 </div>
             </div>
             <div class="grid__container-item">
@@ -136,7 +140,9 @@
                         músicos Indio Solari y Skay Beilinson, y la gestora todoterreno Negra Poli, comenzaron a hacerse
                         públicos después de años de misterio y discreción.</p>
                     <img src="./img/noticias/ultima.webp" alt="">
-                    <a href="" class="grid__container-buttom">Continuar leyendo</a>
+                    <div> <br>
+                        <a href="" class="grid__container-buttom">Continuar leyendo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,6 +156,7 @@
         <h2>Discos</h2>
         <div class="flex__container-discs">
             <div class="container-discs">
+                <span class="numero">#1</span>
                 <h3 class="disc-title">Gulp!</h3>
                 <img src="./img/discos/Gulp/gulp1.jpg" alt="">
                 <h4 class="disc-description">Publicado el 22 de Abril de 1985
@@ -163,6 +170,8 @@
                 <a href="" id="disc-buttom">Leer más</a>
             </div>
             <div class="container-discs">
+                <span class="numero">#2</span>
+
                 <h3 class="discs-title">Oktubre</h3>
                 <img src="./img/discos/Oktubre/ok1.jpg" alt="">
                 <h4 class="disco-description">Publicado el 4 de octubre de 1986</h4>
@@ -177,6 +186,8 @@
 
             </div>
             <div class="container-discs">
+                <span class="numero">#3</span>
+
                 <h3 class="discs-title">Un baión para el ojo idiota</h3>
                 <img src="./img/discos/Un Baion Para El Ojo Idiota/baion1.png" alt="">
                 <h4 class="disco-description">Publicado el 9 de mayo de 1988
@@ -190,7 +201,7 @@
                 <a href="" id="disc-buttom">Leer más</a>
 
             </div>
-            <div>
+            <div class="disc-buttom-container">
                 <a href="" id="disc-buttom" class="disc-buttom-complet">Ver discografía completa</a>
             </div>
         </div>
@@ -198,7 +209,8 @@
     <!-- separador de secciones -->
     <div class="grid__container-separator"></div>
     <!-- CARRUSEL -->
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <section class="carousel__container">
+        <div id="carouselExampleIndicators" class="carousel slide">
         <h2 class="carousel-title">Imágenes</h2>
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -230,48 +242,61 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <div class="carousel-buttom-container">
+        <a href="" id="disc-buttom" class="disc-buttom-complet">Ver Galerías</a>
+    </div>
+    </section>
 
     <!-- separador de secciones -->
     <div class="grid__container-separator"></div>
+
+
+
+
+
+
+
+
+
 
     <!-- FOOTER -->
     <footer class="footer__container">
         <div class="footer_list-container">
             <ul class="footer__list">
                 <li class="footer__item">
-                    <a href="#">
+                    <a href="./index.html">
                         <i class="bi bi-house"></i>
                         Inicio
                     </a>
                 </li>
                 <li class="footer__item">
-                    <a href="#">
+                    <a href="./pages/noticias.html">
                         <i class="bi bi-newspaper"></i>
                         Noticias
                     </a>
                 </li>
                 <li class="footer__item">
-                    <a href="#">
+                    <a href="./pages/discografia.html">
                         <i class="bi bi-disc"></i>
                         Discografia
                     </a>
                 </li>
                 <li class="footer__item">
-                    <a href="#">
+                    <a href="./pages/galeria.html">
                         <i class="bi bi-images"></i>
                         Galería</a>
                 </li>
                 <li class="footer__item">
-                    <a href="#">
+                    <a href="./pages/contacto.html">
                         <i class="bi bi-envelope"></i>
                         Contacto</a>
                 </li>
             </ul>
         </div>
         <div class="footer__social">
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-spotify"></i>
+            <a href=""><i class="bi bi-youtube"></i></a></i>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-spotify"></i></a>
         </div>
 
     </footer>
