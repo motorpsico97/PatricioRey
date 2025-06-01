@@ -190,6 +190,7 @@ label {
     .header__open-nav-button {
         display: none;
     }
+
 }
 
 /* ------ HEADER ENDS */
@@ -201,6 +202,7 @@ label {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        text-align: center;
     }
 
     .main__container img {
@@ -220,6 +222,7 @@ label {
 
     .main__container p {
         font-size: 1rem;
+        align-self: center;
     }
 
     /* GRID-NOTICIAS */
