@@ -5,9 +5,6 @@
     font-family: "Montserrat", sans-serif !important;
 }
 
-/* ocultar barra de scroll 
-    display: none;
-} */
 
 body {
     margin: 0;
@@ -27,6 +24,46 @@ label {
     padding: 0;
 }
 
+/* Selections */
+p::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h1::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h2::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h3::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h4::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h5::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+h6::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
+
+a::selection {
+    background-color: #000000;
+    color: #ff0000;
+}
 
 /* ------ HEADER */
 .header {
@@ -122,17 +159,10 @@ label {
 .section__grid {
     display: flex;
     flex-direction: column;
-    width: 80%;
     margin: auto;
     margin-top: 5rem;
 }
 
-
-.section__grid h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 50px;
-}
 
 .grid__container-item {
     width: 100%;
@@ -141,7 +171,8 @@ label {
     gap: 20px;
     margin-bottom: 50px;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgba(185, 185, 185, 0.7);
+    border-radius: 1rem;
     padding: 20px;
 }
 
@@ -304,11 +335,10 @@ label {
 
 }
 
-/* ------ HEADER ENDS */
-
-
 
 @media (max-width:700px) {
+
+    /* HEADER */
     .header__nav-list {
         text-align: center;
         gap: 20px;
@@ -353,16 +383,13 @@ label {
 
     /* GRID-NOTICIAS */
 
-
-
     .section__grid h2 {
         font-size: 2rem;
         font-weight: 600;
         color: #000000;
-        padding: 0 30px;
         border-radius: 10px;
+        margin: 20px 20px;
     }
-
 
     .grid__container img {
         max-width: 100%;
@@ -374,10 +401,6 @@ label {
     .grid__container-item {
         border: 1px solid #dddddd;
         border-radius: 1rem;
-    }
-
-    .grid__container-buttom {
-        font-size: 10px;
     }
 
     .grid__container h3 {
@@ -395,6 +418,7 @@ label {
         margin-top: 20px;
     }
 
+
     /* DISCOS */
     .section-discs {
         display: flex;
@@ -408,6 +432,7 @@ label {
         color: #000000;
         padding: 0 30px;
         border-radius: 10px;
+        margin-top: 100px;
     }
 
     .flex__container-discs {
@@ -446,8 +471,29 @@ label {
 
     }
 
+    .disc-buttom-container {
+        align-self: center;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    #disc-buttom {
+        padding: 10px 15px;
+    }
 
     /* carusel */
+    .carousel__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 100px 0;
+    }
+
+    .carousel-buttom-container {
+        align-self: center;
+        font-size: 1rem;
+    }
+
     .carousel-title {
         font-size: 2rem;
         font-weight: 600;
@@ -465,15 +511,46 @@ label {
     .footer__list i {
         padding: 0 10px;
     }
+
+    .footer__container {
+        height: auto;
+    }
 }
 
 
 @media (min-width: 700px) and (max-width: 1024px) {
 
-/* NOTICIAS */
-    .subgrid-item p{
+    /* MAIN  */
+    .hero__container h1 {
+        font-size: 5rem;
+        text-align: center;
+        font-weight: 600;
+        margin: 60px 0 20px 0;
+        letter-spacing: 2rem;
+    }
+
+    .hero__container p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* NOTICIAS */
+
+    .grid__container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .section__grid h2 {
+        font-size: 3rem;
+        padding: 0 0 30px 30px;
+        font-weight: 600;
+    }
+
+    .subgrid-item p {
         margin-right: 15px;
     }
+
     .grid__container-item img {
         max-width: 100%;
         height: 300px;
@@ -555,25 +632,30 @@ label {
     .container-discs p {
         text-align: justify;
     }
-    .disc-buttom-container{
+
+    .disc-buttom-container {
         align-self: center;
         margin-top: 20px;
         font-size: 1.5rem;
     }
-    #disc-buttom{
+
+    #disc-buttom {
         padding: 10px 15px;
     }
 
     /* CARUSEL */
-    .carousel__container{
+    .carousel__container {
         display: flex;
         flex-direction: column;
+        margin: 100px 0;
     }
-    .carousel-buttom-container{
+
+    .carousel-buttom-container {
         align-self: center;
         margin-top: 50px;
         font-size: 1.5rem;
     }
+
     #carouselExampleIndicators img {
         border-radius: 1rem;
         max-width: 100%;
@@ -613,7 +695,7 @@ label {
         gap: 50px;
     }
 
-    .footer__social i{
+    .footer__social i {
         font-size: 2.5rem;
     }
 
@@ -624,7 +706,8 @@ label {
     .footer__list i {
         padding: 0 20px;
     }
-    .footer__container a{
+
+    .footer__container a {
         font-size: 1.5rem;
     }
 }
