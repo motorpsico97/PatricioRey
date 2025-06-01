@@ -1110,6 +1110,7 @@ a::selection {
     }
 
     .carousel__container h2 {
+        padding-bottom: 100PX;
         font-size: 3rem;
         margin: 100px 0 0 250px;
         font-weight: 600;
