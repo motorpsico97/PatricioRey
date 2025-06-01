@@ -247,6 +247,7 @@ a::selection {
 }
 
 /* ------FOOTER------ */
+
 .footer__container {
     display: flex;
     flex-direction: row;
@@ -294,7 +295,9 @@ a::selection {
     color: #ffffff;
 }
 
-
+.footer__container img {
+    display: none;
+}
 
 
 
@@ -424,6 +427,7 @@ a::selection {
         display: flex;
         flex-direction: column;
         text-align: justify;
+
     }
 
     .section__discs h2 {
@@ -506,6 +510,18 @@ a::selection {
         width: 100vw;
     }
 
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        max-height: 100%;
+        top: 80px;
+        height: 250px;
+    }
+
+    .carousel-buttom-container {
+        padding: 50px 0;
+        align-self: center;
+    }
 
     /* footer */
     .footer__list i {
@@ -520,9 +536,9 @@ a::selection {
 
 @media (min-width: 700px) and (max-width: 1024px) {
 
-    /* MAIN  */
+    /* HERO  */
     .hero__container h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
         font-weight: 600;
         margin: 60px 0 20px 0;
@@ -534,6 +550,11 @@ a::selection {
         font-size: 2rem;
     }
 
+    .hero__container img {
+        max-width: 100%;
+        width: 100vw;
+    }
+
     /* NOTICIAS */
 
     .grid__container {
@@ -543,8 +564,10 @@ a::selection {
 
     .section__grid h2 {
         font-size: 3rem;
-        padding: 0 0 30px 30px;
         font-weight: 600;
+        padding: 0 100px;
+        margin: 100px 0;
+
     }
 
     .subgrid-item p {
@@ -607,8 +630,9 @@ a::selection {
 
     .section__discs h2 {
         font-size: 3rem;
-        padding: 0 0 30px 30px;
         font-weight: 600;
+        padding: 0 100px;
+        margin: 100px 0;
     }
 
     .container-discs img {
@@ -667,10 +691,23 @@ a::selection {
         margin: auto;
     }
 
-    #carouselExampleIndicators h2 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+    .carousel-title {
+        font-size: 3rem;
         font-weight: 600;
+        margin: 100px 100px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        max-height: 100%;
+        top: 300px;
+        height: 250px;
+    }
+
+    .carousel-buttom-container {
+        padding: 50px 0;
+        align-self: center;
     }
 
     /* FOOTER */
@@ -691,27 +728,436 @@ a::selection {
     .footer__social {
         display: flex;
         flex-direction: row;
-        padding: 0 20px;
+
         gap: 50px;
     }
 
     .footer__social i {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .footer__list li {
         margin: 20px;
     }
 
-    .footer__list i {
-        padding: 0 20px;
-    }
-
     .footer__container a {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
 
 
-@media (min-width: 1024px) and (max-width: 1280px) {}
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+    /* HEADER */
+    .header__nav-list {
+        gap: 50px;
+    }
+
+    /* HERO */
+    .hero__container h1 {
+        font-size: 5rem;
+        text-align: center;
+        font-weight: 600;
+        margin: 60px 0 20px 0;
+        letter-spacing: 2rem;
+    }
+
+    .hero__container p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    /* NOTICIAS */
+
+    .section__grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 100px;
+
+    }
+
+    .section__grid h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 100px 120px;
+
+    }
+
+    .grid__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .subgrid-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subgrid-item img {
+        max-width: 100%;
+        width: 100%;
+        order: -2;
+        margin-bottom: 20px;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgb(63, 63, 63);
+
+    }
+
+    .grid__container-item {
+        width: 35%;
+    }
+
+    /* DISCOS */
+
+
+    .section__discs h2 {
+        font-size: 3rem;
+        margin: 100px 0;
+    }
+
+    .section__discs {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .flex__container-discs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 50px;
+    }
+
+    .container-discs img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgb(63, 63, 63);
+
+
+    }
+
+    .container-discs {
+        border: 1px solid #dddddd;
+        border-radius: 1rem;
+        padding: 30px;
+
+    }
+
+    
+    .container-discs h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container-discs h4 {
+        margin: 20px 0;
+        text-align: justify;
+    }
+
+    .disc-buttom-container {
+        align-self: center;
+        margin: auto;
+        grid-column: span 2 / span 2;
+    }
+
+    .disc-buttom-complet {
+        padding: 10px 25px;
+        font-size: 1.5rem;
+    }
+
+    /* CAROUSEL */
+
+    .carousel__container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .carousel__container h2 {
+        font-size: 3rem;
+        margin: 100px 0;
+    }
+
+    .carousel__container img {
+        border-radius: 1rem;
+    }
+
+    .carousel-indicators {
+        width: auto;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: absolute;
+        max-height: 100%;
+        top: 300px;
+        height: 400px;
+    }
+
+    .carousel-buttom-container {
+        padding: 50px 0;
+        align-self: center;
+    }
+
+    /* FOOTER */
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+
+    .footer__social {
+        flex-direction: row;
+        gap: 100px;
+        padding: 50px 0;
+    }
+
+    .footer__social i {
+        font-size: 3rem;
+    }
+
+}
+
+
+
+@media (min-width:1281px) {
+    /* HEADER */
+    .header__nav-list{
+        gap: 80px;
+    }
+
+    /* HERO */
+    .hero__container {
+        max-width: 100%;
+        width: 60%;
+        margin: auto;
+    }
+
+    .hero__container h1 {
+        font-size: 10rem;
+        font-weight: 600;
+        text-align: center;
+        margin: 50px 0;
+    }
+    .hero__container p{
+        font-size: 3.5rem;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+ 
+    .hero__container img {
+        box-shadow: 0 0 10px rgb(63, 63, 63);
+        border-radius: 1rem;
+    }
+
+
+
+    /* NOTICIAS */
+    .section__grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid__container {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .grid__container-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+    }
+
+    .subgrid-item {
+        row-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .section__grid h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 0 100px;
+        margin: 100px 150px;
+
+    }
+
+    .subgrid-item p {
+        margin-right: 15px;
+    }
+
+    .grid__container-item img {
+        max-width: 100%;
+        width: 100%;
+        box-shadow: 0 0 10px rgb(63, 63, 63);
+        border-radius: 1rem;
+    }
+
+    .grid__container h3 {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .grid__container h4 {
+        font-size: 1.2rem;
+    }
+
+    .grid__container-buttom {
+        width: 200px;
+    }
+
+
+
+    /* DISCOS */
+    .section__discs h2 {
+        font-size: 3rem;
+        margin: 100px 0;
+    }
+
+    .section__discs {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .flex__container-discs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 50px;
+    }
+
+    .container-discs img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px rgb(63, 63, 63);
+        align-self: center;
+    }
+
+    .container-discs {
+        border: 1px solid #dddddd;
+        border-radius: 1rem;
+        padding: 30px;
+
+    }
+
+    .container-discs h3 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container-discs h4 {
+        margin: 20px 0;
+        text-align: justify;
+    }
+
+    .disc-buttom-container {
+        align-self: center;
+        margin: auto;
+        grid-column: span 2 / span 2;
+    }
+
+    .disc-buttom-complet {
+        padding: 10px 25px;
+        font-size: 1.5rem;
+    }
+
+
+
+    /* CAROUSEL */
+    .carousel__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #carouselExampleIndicators {
+        width: 50%;
+        margin: auto;
+    }
+
+    .carousel__container h2 {
+        font-size: 3rem;
+        margin: 100px 0 0 250px;
+        font-weight: 600;
+    }
+
+    .carousel__container img {
+        border-radius: 1rem;
+    }
+
+    .carousel-buttom-container {
+        align-self: center;
+        margin: 100px 0;
+    }
+
+    /* FOOTER */
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer__social a {
+        font-size: 2.5rem;
+        margin: 15px 0;
+    }
+
+    .footer__list i {
+        margin: 0 20px;
+    }
+
+    .footer__container img {
+        display: block;
+        max-width: 100%;
+        width: 50%;
+        margin: auto;
+    }
+
+
+}
