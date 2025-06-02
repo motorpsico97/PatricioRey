@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-
+@import url(./contacto.css);
 * {
     box-sizing: border-box !important;
     font-family: "Montserrat", sans-serif !important;
@@ -531,6 +531,10 @@ a::selection {
     .footer__container {
         height: auto;
     }
+    .buttom_container-home{
+        display: none;
+}
+
 }
 
 
@@ -744,7 +748,7 @@ a::selection {
         font-size: 1rem;
     }
 
-    .buttom_container-home i {
+    .buttom_container-home{
         display: none;
 }
 }
