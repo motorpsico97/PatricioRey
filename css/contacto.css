@@ -1,5 +1,4 @@
-
-.form__container{
+.form__container {
     width: 90%;
     margin: auto;
     padding: 50px 0;
@@ -9,28 +8,40 @@
     justify-items: center;
 }
 
-.form__container-personal, .form__container-contacto, .form__container-mensaje, .form__container-lista {
+.form__container-personal,
+.form__container-contacto,
+.form__container-mensaje,
+.form__container-lista {
     border: 1px solid #b6b6b6;
     padding: 20px;
     border-radius: 1rem;
     margin-top: 20px;
+    box-shadow: 0 0 10px #525252;
 }
-.form-buttom{
+
+.form-buttom {
     padding: 20px 0;
 }
 
-.form__container-personal label{
+.form__container-personal label {
     padding: 20px 0;
 }
 
-.form__container-mensaje label{
+.form__container-mensaje label {
     padding: 10px 0;
 
 }
-.form__container-mensaje div{
+
+.form__container-mensaje div {
     display: flex;
     flex-direction: column;
 }
-.form__container input{
+
+.form__container input {
     margin-left: 30px;
+}
+
+.form__container select {
+    margin-left: 30px;
+    padding: 0 20px;
 }

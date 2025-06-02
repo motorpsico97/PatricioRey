@@ -74,20 +74,20 @@
                 <fieldset class="form__container-personal">
                     <legend>Datos personales</legend>
                     <label for="text-name">Nombre</label>
-                    <input type="text" id="text-name" placeholder="Ingrese su nombre"><br>
+                    <input type="text" id="text-name" placeholder="Ingrese su nombre" autofocus maxlength="15" minlength="3" required><br>
                     <label for="text-apellido">Apellido</label>
-                    <input type="text" id="text-apellido" placeholder="Ingrese su apellido">
+                    <input type="text" id="text-apellido" placeholder="Ingrese su apellido" required>
                 </fieldset>
                 <fieldset class="form__container-contacto">
                     <legend>Datos de contacto</legend>
                     <label for="email">E-mail</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
                 </fieldset>
                 <fieldset class="form__container-mensaje">
                     <legend>Mensaje</legend>
                     <div>
                         <label for="textarea-msg">Deje su mensaje</label>
-                    <textarea name="" id="textarea-msg">Mensaje</textarea><br>
+                        <textarea name="" id="textarea-msg">Mensaje</textarea><br>
                     </div>
                 </fieldset>
                 <fieldset class="form__container-lista">
@@ -95,7 +95,7 @@
                     <select id="cars" name="cars">
                         <option value="volvo">Amigos</option>
                         <option value="saab">Youtube</option>
-                        <option value="fiat">Sportify</option>
+                        <option value="fiat">Spotify</option>
                         <option value="audi">Otros</option>
                     </select>
                 </fieldset>
