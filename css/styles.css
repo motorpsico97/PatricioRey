@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 * {
     box-sizing: border-box !important;
     font-family: "Montserrat", sans-serif !important;
@@ -177,10 +178,10 @@ a::selection {
 
 
 .grid__container-item .grid__container-buttom {
-    padding: 5px;
-    background-color: #bf0000;
+    padding: 5px 15px;
+    background-color: #910101;
+    box-shadow: 3px 4px 0 0 #66221c;
     color: #ffff;
-    box-shadow: 3px 4px 0 0 #8a2a21;
     border-radius: 4px;
     text-decoration: none;
     transition: 1s;
@@ -205,7 +206,8 @@ a::selection {
 
 /* DISCOS */
 #disc-buttom {
-    background-color: #880000;
+    background-color: #910101;
+    box-shadow: 3px 4px 0 0 #66221c;
     padding: 5px 10px;
     color: #ffff;
     text-decoration: none;
@@ -226,24 +228,6 @@ a::selection {
     color: #880000;
 }
 
-.numero {
-    position: absolute;
-    top: 100px;
-    background-color: #880000;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    font-size: 2.4rem;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #000000;
-    color: #ffffff;
-}
-
-.container-discs {
-    position: relative;
-}
 
 /* ------FOOTER------ */
 
@@ -300,6 +284,7 @@ a::selection {
 
 /* FORM CONTACTO */
 .form__container {
+    max-width: 90%;
     width: 90%;
     margin: auto;
     padding: 50px 0;
@@ -307,6 +292,11 @@ a::selection {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+}
+
+.form__container h2 {
+    font-size: 2.5rem;
+
 }
 
 .form__container-personal,
@@ -320,8 +310,14 @@ a::selection {
     box-shadow: 0 0 10px #525252;
 }
 
+.form__container-mensaje textarea {
+    height: 150px;
+}
+
+
 .form-buttom {
     padding: 20px 0;
+    justify-self: center;
 }
 
 .form__container-personal label {
@@ -347,8 +343,19 @@ a::selection {
     padding: 0 20px;
 }
 
+.form-buttom-send,
+.form-buttom-restart {
+    background-color: #880000;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
 
-
+.form-buttom-send:hover,
+.form-buttom-restart:hover {
+    background-color: #000000;
+}
 
 
 /* ------ QUERIES -------- */
@@ -577,9 +584,10 @@ a::selection {
     .footer__container {
         height: auto;
     }
-    .buttom_container-home{
+
+    .buttom_container-home {
         display: none;
-}
+    }
 
 }
 
@@ -794,9 +802,9 @@ a::selection {
         font-size: 1rem;
     }
 
-    .buttom_container-home{
+    .buttom_container-home {
         display: none;
-}
+    }
 }
 
 
@@ -1002,10 +1010,11 @@ a::selection {
         border-radius: 1rem;
         transition: 0.6s;
     }
+
     .buttom_container-home i:hover {
         background-color: #ffffff;
         color: #ff0000;
-}
+    }
 }
 
 
@@ -1246,5 +1255,7 @@ a::selection {
         background-color: #ffffff;
         color: #ff0000;
     }
+
+
 
 }
